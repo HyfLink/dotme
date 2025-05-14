@@ -7,3 +7,12 @@
 [submodule "/home/me/.config/grub"]
 	path = /home/me/.config/grub
 	url = https://github.com/catppuccin/grub
+[submodule "/home/me/.config/yazi/catppuccin"]
+	path = /home/me/.config/yazi/catppuccin
+	url = https://github.com/catppuccin/yazi
+[submodule "/home/me/.config/tmux/catppuccin"]
+	path = /home/me/.config/tmux/catppuccin
+	url = https://github.com/catppuccin/tmux
+[submodule "/home/me/.config/refind/catppuccin"]
+	path = /home/me/.config/refind/catppuccin
+	url = https://github.com/catppuccin/refind

@@ -39,8 +39,6 @@
 # Zed
 !.config/zed
 !.config/zed/settings.json
-# Grub
-!.config/grub
 # Kitty
 !.config/kitty
 !.config/kitty/catppuccin
@@ -53,6 +51,14 @@
 !.config/bat/themes
 !.config/bat/themes/*
 !.config/bat/config
+# Yazi
+!.tmux.conf
+!.config/tmux
+!.config/tmux/catppuccin
+# Yazi
+!.config/yazi
+!.config/yazi/catppuccin
+!.config/yazi/theme.toml
 # Fcitx5
 !.config/fcitx5
 !.config/fcitx5/conf
