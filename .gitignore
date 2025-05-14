@@ -7,6 +7,10 @@
 !.bash_logout
 !.bash_profile
 !.zshrc
+!.zimrc
+!.zim/
+!.zim/zimfw.zsh
+!.p10k.zsh
 
 #
 # Git
@@ -26,3 +30,18 @@
 !.cargo/config.toml
 !.rustup
 !.rustup/settings.toml
+
+#
+# Config
+#
+!.config
+!.config/user-dirs.dirs
+!.config/user-dirs.locale
+# Niri
+!.config/niri
+!.config/niri/*
+# Kitty
+!.config/kitty
+# Zed
+!.config/zed
+!.config/zed/settings.json

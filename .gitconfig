@@ -3,3 +3,9 @@
 [user]
 	name = Huang Yifan
 	email = yifan0610@foxmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
