@@ -16,3 +16,6 @@
 [submodule "/home/me/.config/refind/catppuccin"]
 	path = /home/me/.config/refind/catppuccin
 	url = https://github.com/catppuccin/refind
+[submodule "/home/me/.config/bottom/catppuccin"]
+	path = /home/me/.config/bottom/catppuccin
+	url = https://github.com/catppuccin/bottom

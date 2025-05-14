@@ -59,6 +59,10 @@
 !.config/yazi
 !.config/yazi/catppuccin
 !.config/yazi/theme.toml
+# Bottom
+!.config/bottom
+!.config/bottom/catppuccin
+!.config/bottom/bottom.toml
 # Fcitx5
 !.config/fcitx5
 !.config/fcitx5/conf
