@@ -1,0 +1,9 @@
+[submodule "/home/me/.config/kitty/catppuccin"]
+	path = /home/me/.config/kitty/catppuccin
+	url = https://github.com/catppuccin/kitty
+[submodule "/home/me/.config/bat/catppuccin"]
+	path = /home/me/.config/bat/catppuccin
+	url = https://github.com/catppuccin/bat
+[submodule "/home/me/.config/grub"]
+	path = /home/me/.config/grub
+	url = https://github.com/catppuccin/grub

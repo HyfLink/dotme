@@ -1,7 +1,11 @@
 *
 
+!.gitconfig
+!.gitignore
+!.gitmodules
+
 #
-# Bash and Zsh
+# Shell
 #
 !.bashrc
 !.bash_logout
@@ -10,26 +14,16 @@
 !.zimrc
 !.zim/
 !.zim/zimfw.zsh
+
+#
+# Development
+#
 !.p10k.zsh
-
-#
-# Git
-#
-!.gitconfig
-!.gitignore
-
-#
-# Nodejs and Npm
-#
-!.npmrc
-
-#
-# Rustup and Cargo
-#
 !.cargo
 !.cargo/config.toml
 !.rustup
 !.rustup/settings.toml
+!.npmrc
 
 #
 # Config
@@ -37,11 +31,33 @@
 !.config
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
+!.local
+!.local/share
 # Niri
 !.config/niri
-!.config/niri/*
-# Kitty
-!.config/kitty
+!.config/niri/config.kdl
 # Zed
 !.config/zed
 !.config/zed/settings.json
+# Grub
+!.config/grub
+# Kitty
+!.config/kitty
+!.config/kitty/catppuccin
+!.config/kitty/themes
+!.config/kitty/themes/*
+!.config/kitty/kitty.conf
+# Bat
+!.config/bat
+!.config/bat/catppuccin
+!.config/bat/themes
+!.config/bat/themes/*
+!.config/bat/config
+# Fcitx5
+!.config/fcitx5
+!.config/fcitx5/conf
+!.config/fcitx5/conf/classicui.conf
+!.config/fcitx5/config
+!.local/share/fcitx5
+!.local/share/fcitx5/rime
+!.local/share/fcitx5/rime/default.custom.yaml
