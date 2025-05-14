@@ -33,6 +33,9 @@
 !.config/user-dirs.locale
 !.local
 !.local/share
+# Fonts
+!.config/fontconfig
+!.config/fontconfig/fonts.conf
 # Niri
 !.config/niri
 !.config/niri/config.kdl
