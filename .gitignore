@@ -1,0 +1,28 @@
+*
+
+#
+# Bash and Zsh
+#
+!.bashrc
+!.bash_logout
+!.bash_profile
+!.zshrc
+
+#
+# Git
+#
+!.gitconfig
+!.gitignore
+
+#
+# Nodejs and Npm
+#
+!.npmrc
+
+#
+# Rustup and Cargo
+#
+!.cargo
+!.cargo/config.toml
+!.rustup
+!.rustup/settings.toml
