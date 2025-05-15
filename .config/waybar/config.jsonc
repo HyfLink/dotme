@@ -1,19 +1,96 @@
 // -*- mode: jsonc -*-
 {
+  "reload_style_on_change": true,
   // Waybar at top layer
   "layer": "top",
   // Waybar position (top|bottom|left|right)
   "position": "bottom",
   // Waybar height (to be removed for auto height)
-  "height": 30,
+  "height": 36,
   // Waybar width
-  // "width": 1600,
+  "width": null,
   // Gaps between modules (in px)
-  // "spacing": 4,
+  "spacing": 0,
   // Choose the order of the modules
-  "modules-left": ["niri/workspaces", "niri/window"],
-  "modules-center": [],
-  "modules-right": [],
+  "modules-left": [
+    "custom/scopebegin",
+    "clock",
+    "cpu",
+    "memory",
+    "network",
+    "custom/scopeend",
+  ],
+  "modules-center": ["custom/scopebegin", "niri/workspaces", "custom/scopeend"],
+  "modules-right": [
+    "custom/scopebegin",
+    "tray",
+    "custom/scopeend",
+    "custom/scopebegin",
+    "wireplumber",
+    "backlight",
+    "battery",
+    "custom/scopeend",
+  ],
+  "clock": {
+    "interval": 60,
+    "format": "\uf017 {:%H:%M}",
+    "format-alt": "\uf133 {:%Y-%m-%d %H:%M}",
+    "tooltip": false,
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "\uf2db {usage:>2}%",
+    "format-alt": "\uf2db {max_frequency}GHz",
+    "tooltip": false,
+  },
+  "memory": {
+    "interval": 2,
+    "format": "\uf538 {percentage:>2}%",
+    "format-alt": "\uf538 {used}GiB",
+    "tooltip": false,
+  },
+  "network": {
+    "interval": 2,
+    "format": "\uf1eb {signalStrength}%",
+    "format-alt": "\uf019 {bandwidthDownBytes} \uf093 {bandwidthUpBytes}",
+    "tooltip": false,
+  },
+  "tray": {
+    "spacing": 4,
+    "show-passitive-items": true,
+  },
+  "wireplumber": {
+    "format": "\uf028",
+    "format-alt": "{volume}% \uf028",
+    "format-muted": "\uf6a9",
+    "tooltip": false,
+  },
+  "backlight": {
+    "format": "\uf185",
+    "format-alt": "{percent}% \uf185",
+    "tooltip": false,
+  },
+  "battery": {
+    "bat": "BAT0",
+    "interval": 30,
+    "format": "{icon}",
+    "format-alt": "{capacity}% {icon}",
+    "format-icons": {
+      "empty": "\uf244",
+      "quarter": "\uf243",
+      "half": "\uf242",
+      "threequarters": "\uf241",
+      "full": "\uf240",
+    },
+    "states": {
+      "empty": 10,
+      "quarter": 30,
+      "half": 55,
+      "threequarters": 80,
+      "full": 100,
+    },
+    "tooltip": false,
+  },
   "niri/workspaces": {
     "format": "{icon}",
     "format-icons": {
@@ -29,7 +106,14 @@
       "10": "九",
     },
   },
-  "niri/window": {
-    "format": "{title} {app_id}",
+  "custom/scopebegin": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false,
+  },
+  "custom/scopeend": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false,
   },
 }

@@ -58,8 +58,6 @@
 # Kitty
 !.config/kitty
 !.config/kitty/catppuccin
-!.config/kitty/themes
-!.config/kitty/themes/*
 !.config/kitty/kitty.conf
 # Bat
 !.config/bat

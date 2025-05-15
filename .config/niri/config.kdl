@@ -90,7 +90,7 @@ input {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
-output "eDP-1" {
+output "eDP-2" {
     // Uncomment this line to disable this output.
     // off
 
@@ -320,6 +320,10 @@ spawn-at-startup "fcitx5" "-d" "--replace"
 spawn-at-startup "xwayland-satellite" ":12"
 
 environment {
+    EDITOR "zeditor --wait"
+
+    GTK_THEME "catppuccin-frapp-teal-standard+default"
+
     DISPLAY ":12"
     ELECTRON_OZONE_PLATFORM_HINT "wayland"
     // ELECTRON_OZONE_PLATFORM_HINT "auto"
@@ -344,7 +348,7 @@ screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"
 cursor {
     // Change the theme and size of the cursor as well as set the XCURSOR_THEME
     // and XCURSOR_SIZE environment variables.
-    xcursor-theme "catppuccin-mocha-teal-cursors"
+    xcursor-theme "catppuccin-frappe-teal-cursors"
     xcursor-size 24
 
     // If set, hides the cursor when pressing a key on the keyboard.
@@ -446,11 +450,14 @@ binds {
     Mod+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+B repeat=false { spawn "chromium"; }
-    Mod+C repeat=false { spawn "zeditor"; }
-    Mod+D repeat=false { spawn "rofi" "-show" "drun"; }
-    Mod+E repeat=false { spawn "dolphin"; }
-    Mod+T repeat=false { spawn "kitty"; }
+    Mod+B       repeat=false { spawn "chromium"; }
+    Mod+C       repeat=false { spawn "zeditor"; }
+    Mod+D       repeat=false { spawn "rofi" "-show" "drun"; }
+    Mod+E       repeat=false { spawn "dolphin"; }
+    Mod+Shift+E repeat=false { spawn "kitty" "-e" "yazi"; }
+    Mod+T       repeat=false { spawn "kitty"; }
+    Mod+Shift+T repeat=false { spawn "kitty" "-e" "tmux"; }
+    Ctrl+Shift+Escape repeat=false { spawn "kitty" "-e" "btm"; }
 
     // TODO: Mod+L repeat=false { spawn "swaylock"; }
     // TODO: Mod+Tab repeat=false { spawn "~/.local/bin/selectwindow.sh"; }
@@ -468,8 +475,8 @@ binds {
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
     // Key bindings for Brightnessctl.
-    XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "-damdgpu_bl1" "set" "5%+"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "-damdgpu_bl1" "set" "5%-"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "set" "5%+"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "set" "5%-"; }
 
     Mod+Q { close-window; }
 

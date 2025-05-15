@@ -45,6 +45,11 @@
   "inlay_hints": {
     "enabled": true
   },
+  "languages": {
+    "JSONC": {
+      "formatter": "prettier"
+    }
+  },
   "lsp": {
     "rust-analyzer": {
       "binary": { "path": "/usr/lib/rustup/bin/rust-analyzer" }

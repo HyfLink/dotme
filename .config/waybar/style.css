@@ -1,38 +1,77 @@
-@import "catppuccin/themes/mocha.css";
+@import "catppuccin/themes/frappe.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "LXGW WenKai", "FontAwesome";
-    font-size: 18px;
-    min-height: 24px;
+    font-family: "LXGW WenKai", "Font Awesome 6 Free";
+    font-size: 16px;
+    font-weight: bold;
 
     background: unset;
-    background-color: transparent;
-    margin: unset;
-    padding: unset;
+    color: unset;
     border: unset;
     border-radius: unset;
+    padding: unset;
+    margin: unset;
     box-shadow: unset;
+    text-shadow: unset;
 }
 
+/* custom/scope{begin,end} */
+#custom-scopebegin,
+#custom-scopeend {
+    background: @base;
+    padding: 0px 6px;
+    margin: 4px 0px;
+}
+#custom-scopebegin {
+    border-radius: 24px 0px 0px 24px;
+    margin-left: 8px;
+}
+#custom-scopeend {
+    border-radius: 0px 24px 24px 0px;
+    margin-right: 8px;
+}
+
+/* niri/workspaces */
 #workspaces {
-    margin: 0 4px;
-    padding: 3px 4px;
-    background-color: @base;
+    background: @base;
+    margin: 4px 0px;
 }
 #workspaces button {
-    margin: 0 2px;
-    padding: 0 6px;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: @base;
     color: @teal;
+    padding: 3px 8px;
+    transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #workspaces button:hover {
-    background-color: @overlay0;
+    background: @overlay0;
 }
 #workspaces button.focused,
 #workspaces button.focused:hover {
-    background-color: @teal;
+    background: @teal;
     color: @base;
+}
+
+/* clock, cpu, memory, etc.. */
+#clock,
+#cpu,
+#memory,
+#network,
+#tray,
+#wireplumber,
+#backlight,
+#battery {
+    background: @base;
+    color: @teal;
+    margin: 4px 0px;
+    padding: 0px 6px;
+}
+
+/* battery */
+#battery.threequarters,
+#battery.half {
+    color: @yellow;
+}
+#battery.quarter,
+#battery.empty {
+    color: @red;
 }
