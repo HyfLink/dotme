@@ -4,18 +4,21 @@
 [submodule "/home/me/.config/bat/catppuccin"]
 	path = /home/me/.config/bat/catppuccin
 	url = https://github.com/catppuccin/bat
-[submodule "/home/me/.config/grub"]
-	path = /home/me/.config/grub
-	url = https://github.com/catppuccin/grub
 [submodule "/home/me/.config/yazi/catppuccin"]
 	path = /home/me/.config/yazi/catppuccin
 	url = https://github.com/catppuccin/yazi
 [submodule "/home/me/.config/tmux/catppuccin"]
 	path = /home/me/.config/tmux/catppuccin
 	url = https://github.com/catppuccin/tmux
-[submodule "/home/me/.config/refind/catppuccin"]
-	path = /home/me/.config/refind/catppuccin
-	url = https://github.com/catppuccin/refind
 [submodule "/home/me/.config/bottom/catppuccin"]
 	path = /home/me/.config/bottom/catppuccin
 	url = https://github.com/catppuccin/bottom
+[submodule "/home/me/.config/waybar/catppuccin"]
+	path = /home/me/.config/waybar/catppuccin
+	url = https://github.com/catppuccin/waybar
+[submodule "/home/me/.config/dunst/catppuccin"]
+	path = /home/me/.config/dunst/catppuccin
+	url = https://github.com/catppuccin/dunst
+[submodule "/home/me/.config/rofi/catppuccin"]
+	path = /home/me/.config/rofi/catppuccin
+	url = https://github.com/catppuccin/rofi

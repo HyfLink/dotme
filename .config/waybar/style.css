@@ -1,0 +1,38 @@
+@import "catppuccin/themes/mocha.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "LXGW WenKai", "FontAwesome";
+    font-size: 18px;
+    min-height: 24px;
+
+    background: unset;
+    background-color: transparent;
+    margin: unset;
+    padding: unset;
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+}
+
+#workspaces {
+    margin: 0 4px;
+    padding: 3px 4px;
+    background-color: @base;
+}
+#workspaces button {
+    margin: 0 2px;
+    padding: 0 6px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: @base;
+    color: @teal;
+}
+#workspaces button:hover {
+    background-color: @overlay0;
+}
+#workspaces button.focused,
+#workspaces button.focused:hover {
+    background-color: @teal;
+    color: @base;
+}

@@ -1,0 +1,35 @@
+// -*- mode: jsonc -*-
+{
+  // Waybar at top layer
+  "layer": "top",
+  // Waybar position (top|bottom|left|right)
+  "position": "bottom",
+  // Waybar height (to be removed for auto height)
+  "height": 30,
+  // Waybar width
+  // "width": 1600,
+  // Gaps between modules (in px)
+  // "spacing": 4,
+  // Choose the order of the modules
+  "modules-left": ["niri/workspaces", "niri/window"],
+  "modules-center": [],
+  "modules-right": [],
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "〇",
+      "2": "一",
+      "3": "二",
+      "4": "三",
+      "5": "四",
+      "6": "五",
+      "7": "六",
+      "8": "七",
+      "9": "八",
+      "10": "九",
+    },
+  },
+  "niri/window": {
+    "format": "{title} {app_id}",
+  },
+}

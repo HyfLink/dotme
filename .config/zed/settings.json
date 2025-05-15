@@ -7,11 +7,50 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  // The name of the Zed theme to use for the UI.
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
   "theme": {
-    "mode": "system",
-    "light": "Ayu Mirage",
-    "dark": "One Dark"
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Ayu Mirage"
+  },
+  // The name of a base set of key bindings to use.
+  "base_keymap": "VSCode",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  // The name of a font to use for rendering text in the editor
+  "buffer_font_family": "Cascadia Code NF",
+  "buffer_font_size": 15,
+  "buffer_font_weight": 400,
+  // The name of a font to use for rendering text in the UI
+  "ui_font_family": "LXGW WenKai Mono",
+  "ui_font_size": 18,
+  "ui_font_weight": 1000,
+  // Settings specific to the terminal
+  "terminal": {
+    // Set the terminal's font family. If this option is not included,
+    // the terminal will default to matching the buffer's font family.
+    "font_family": "Cascadia Code NF",
+    "font_size": 16,
+    "line_height": "standard",
+    "buffer_font_weight": 400
+  },
+  // Inlay hint related settings
+  "inlay_hints": {
+    "enabled": true
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "binary": { "path": "/usr/lib/rustup/bin/rust-analyzer" }
+    },
+    "ruff": {
+      "binary": { "path": "/usr/bin/ruff" }
+    }
   }
 }

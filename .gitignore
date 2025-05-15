@@ -29,19 +29,32 @@
 # Config
 #
 !.config
-!.config/user-dirs.dirs
-!.config/user-dirs.locale
 !.local
 !.local/share
+# Xdg
+!.config/user-dirs.dirs
+!.config/user-dirs.locale
+!.config/dconf
+!.config/dconf/user
 # Fonts
 !.config/fontconfig
 !.config/fontconfig/fonts.conf
 # Niri
 !.config/niri
 !.config/niri/config.kdl
-# Zed
-!.config/zed
-!.config/zed/settings.json
+# Waybar
+!.config/waybar
+!.config/waybar/catppuccin
+!.config/waybar/config.jsonc
+!.config/waybar/style.css
+# Dunst
+!.config/dunst
+!.config/dunst/catppuccin
+!.config/dunst/dunstrc
+# Dunst
+!.config/rofi
+!.config/rofi/catppuccin
+!.config/rofi/config.rasi
 # Kitty
 !.config/kitty
 !.config/kitty/catppuccin
@@ -54,7 +67,7 @@
 !.config/bat/themes
 !.config/bat/themes/*
 !.config/bat/config
-# Yazi
+# Tmux
 !.tmux.conf
 !.config/tmux
 !.config/tmux/catppuccin
@@ -74,3 +87,6 @@
 !.local/share/fcitx5
 !.local/share/fcitx5/rime
 !.local/share/fcitx5/rime/default.custom.yaml
+# Zed
+!.config/zed
+!.config/zed/settings.json
