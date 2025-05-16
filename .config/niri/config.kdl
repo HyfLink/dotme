@@ -411,9 +411,9 @@ animations {
     // block-out-from "screencast"
 }
 
-// Window rules for all windows.
-window-rule {
-    // Enable rounded corners
+// Enable rounded corners for all windows.
+// (This example rule is commented out with a "/-" in front.)
+/-window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
@@ -426,12 +426,6 @@ window-rule {
 // Window rules for the focused windows.
 window-rule {
     match is-focused=true
-}
-
-// Window rules for Rofi
-window-rule {
-    match app-id=r#"Rofi"#
-    open-floating true
 }
 
 binds {
@@ -452,7 +446,8 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+B       repeat=false { spawn "chromium"; }
     Mod+C       repeat=false { spawn "zeditor"; }
-    Mod+D       repeat=false { spawn "rofi" "-show" "drun"; }
+    Mod+D       repeat=false { spawn "fuzzel"; }
+    Mod+Space   repeat=false { spawn "fuzzel"; }
     Mod+E       repeat=false { spawn "dolphin"; }
     Mod+Shift+E repeat=false { spawn "kitty" "-e" "yazi"; }
     Mod+T       repeat=false { spawn "kitty"; }

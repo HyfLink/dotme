@@ -1,6 +1,5 @@
 // -*- mode: jsonc -*-
 {
-  "reload_style_on_change": true,
   // Waybar at top layer
   "layer": "top",
   // Waybar position (top|bottom|left|right)
@@ -20,7 +19,7 @@
     "network",
     "custom/end",
   ],
-  "modules-center": ["custom/begin", "niri/workspaces", "custom/end"],
+  "modules-center": ["niri/workspaces"],
   "modules-right": [
     "custom/begin",
     "pulseaudio",

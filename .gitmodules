@@ -1,24 +1,24 @@
-[submodule "/home/me/.config/kitty/catppuccin"]
-	path = /home/me/.config/kitty/catppuccin
-	url = https://github.com/catppuccin/kitty
-[submodule "/home/me/.config/bat/catppuccin"]
-	path = /home/me/.config/bat/catppuccin
+[submodule ".config/bat/catppuccin"]
+	path = .config/bat/catppuccin
 	url = https://github.com/catppuccin/bat
-[submodule "/home/me/.config/yazi/catppuccin"]
-	path = /home/me/.config/yazi/catppuccin
-	url = https://github.com/catppuccin/yazi
-[submodule "/home/me/.config/tmux/catppuccin"]
-	path = /home/me/.config/tmux/catppuccin
-	url = https://github.com/catppuccin/tmux
-[submodule "/home/me/.config/bottom/catppuccin"]
-	path = /home/me/.config/bottom/catppuccin
+[submodule ".config/bottom/catppuccin"]
+	path = .config/bottom/catppuccin
 	url = https://github.com/catppuccin/bottom
-[submodule "/home/me/.config/waybar/catppuccin"]
-	path = /home/me/.config/waybar/catppuccin
-	url = https://github.com/catppuccin/waybar
-[submodule "/home/me/.config/dunst/catppuccin"]
-	path = /home/me/.config/dunst/catppuccin
+[submodule ".config/dunst/catppuccin"]
+	path = .config/dunst/catppuccin
 	url = https://github.com/catppuccin/dunst
-[submodule "/home/me/.config/rofi/catppuccin"]
-	path = /home/me/.config/rofi/catppuccin
-	url = https://github.com/catppuccin/rofi
+[submodule ".config/fuzzel/catppuccin"]
+	path = .config/fuzzel/catppuccin
+	url = https://github.com/catppuccin/fuzzel
+[submodule ".config/kitty/catppuccin"]
+	path = .config/kitty/catppuccin
+	url = https://github.com/catppuccin/kitty
+[submodule ".config/tmux/catppuccin"]
+	path = .config/tmux/catppuccin
+	url = https://github.com/catppuccin/tmux
+[submodule ".config/waybar/catppuccin"]
+	path = .config/waybar/catppuccin
+	url = https://github.com/catppuccin/waybar
+[submodule ".config/yazi/catppuccin"]
+	path = .config/yazi/catppuccin
+	url = https://github.com/catppuccin/yazi
