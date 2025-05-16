@@ -19,72 +19,72 @@
 # Development
 #
 !.p10k.zsh
-!.cargo
+!.cargo/
 !.cargo/config.toml
-!.rustup
+!.rustup/
 !.rustup/settings.toml
 !.npmrc
 
 #
 # Config
 #
-!.config
-!.local
+!.config/
+!.local/
 !.local/share
 # Xdg
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
-!.config/dconf
+!.config/dconf/
 !.config/dconf/user
 # Fonts
-!.config/fontconfig
+!.config/fontconfig/
 !.config/fontconfig/fonts.conf
 # Niri
-!.config/niri
+!.config/niri/
 !.config/niri/config.kdl
 # Waybar
-!.config/waybar
-!.config/waybar/catppuccin
+!.config/waybar/
+!.config/waybar/catppuccin/
 !.config/waybar/config.jsonc
 !.config/waybar/style.css
 # Dunst
-!.config/dunst
-!.config/dunst/catppuccin
+!.config/dunst/
+!.config/dunst/catppuccin/
 !.config/dunst/dunstrc
 # Dunst
-!.config/rofi
-!.config/rofi/catppuccin
+!.config/rofi/
+!.config/rofi/catppuccin/
 !.config/rofi/config.rasi
 # Kitty
-!.config/kitty
-!.config/kitty/catppuccin
+!.config/kitty/
+!.config/kitty/catppuccin/
 !.config/kitty/kitty.conf
 # Bat
-!.config/bat
-!.config/bat/catppuccin
-!.config/bat/themes
+!.config/bat/
+!.config/bat/catppuccin/
+!.config/bat/themes/
 !.config/bat/themes/*
 !.config/bat/config
 # Tmux
 !.tmux.conf
-!.config/tmux
-!.config/tmux/catppuccin
+!.config/tmux/
+!.config/tmux/catppuccin/
 # Yazi
-!.config/yazi
-!.config/yazi/catppuccin
+!.config/yazi/
+!.config/yazi/catppuccin/
 !.config/yazi/theme.toml
 # Bottom
-!.config/bottom
-!.config/bottom/catppuccin
+!.config/bottom/
+!.config/bottom/catppuccin/
 !.config/bottom/bottom.toml
 # Fcitx5
-!.config/fcitx5
-!.config/fcitx5/conf
+!.config/fcitx5/
+!.config/fcitx5/conf/
 !.config/fcitx5/conf/classicui.conf
 !.config/fcitx5/config
-!.local/share/fcitx5
-!.local/share/fcitx5/rime
+!.local/share/fcitx5/
+!.local/share/fcitx5/rime/
 !.local/share/fcitx5/rime/default.custom.yaml
 # Zed
-!.config/zed
+!.config/zed/
 !.config/zed/settings.json
