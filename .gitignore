@@ -88,3 +88,6 @@
 # Zed
 !.config/zed
 !.config/zed/settings.json
+# Thunderbird
+!.thunderbird
+!.thunderbird/catppuccin

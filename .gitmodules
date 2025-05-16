@@ -22,3 +22,6 @@
 [submodule ".config/yazi/catppuccin"]
 	path = .config/yazi/catppuccin
 	url = https://github.com/catppuccin/yazi
+[submodule ".thunderbird/catppuccin"]
+	path = .thunderbird/catppuccin
+	url = https://github.com/catppuccin/thunderbird/
