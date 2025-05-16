@@ -1,25 +1,6 @@
 @import "catppuccin/themes/frappe.css";
 
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "LXGW WenKai", "Font Awesome 6 Free";
-    font-size: 16px;
-    font-weight: bold;
-
-    background: unset;
-    color: unset;
-    border: unset;
-    border-radius: unset;
-    padding: unset;
-    margin: unset;
-    box-shadow: unset;
-    text-shadow: unset;
-}
-
-/* tooltip */
-tooltip {
-    background: @base;
-    color: @text;
 }
 
 /* battery, backlight, clock, etc.. */
@@ -31,10 +12,13 @@ tooltip {
 #network,
 #pulseaudio,
 #pulseaudio#microphone,
-#niri-taskbar {
+tooltip {
     background: @base;
     color: @teal;
-    margin: 4px 0px;
+    font-family: "LXGW WenKai", "Font Awesome 6 Free";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 2px 0px;
     padding: 0px 6px;
 }
 
@@ -51,14 +35,17 @@ tooltip {
 /* niri/workspaces */
 #workspaces {
     background: @base;
-    margin: 4px 0px;
 }
 #workspaces button {
     color: @teal;
-    padding: 3px 8px;
+    font-family: "LXGW WenKai";
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 4px;
     border-bottom-color: @teal;
     border-bottom-style: solid;
     border-bottom-width: 2px;
+    border-radius: 0;
     transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 #workspaces button.empty {
@@ -76,16 +63,6 @@ tooltip {
     color: @base;
     border-bottom-color: @teal;
 }
-
-/* custom/{begin,end} */
-#custom-begin,
-#custom-end {
-    background: @base;
-    margin: 4px 0px;
-}
-#custom-begin {
-    margin-left: 4px;
-}
-#custom-end {
-    margin-right: 4px;
+#workspaces button#niri-workspace-1 {
+    font-family: "NotoSans Nerd Font";
 }

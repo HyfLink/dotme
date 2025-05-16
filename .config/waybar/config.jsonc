@@ -11,23 +11,13 @@
   // Gaps between modules (in px)
   "spacing": 0,
   // Choose the order of the modules
-  "modules-left": [
-    "custom/begin",
-    "niri/workspaces",
-    "clock",
-    "cpu",
-    "memory",
-    "network",
-    "custom/end",
-  ],
+  "modules-left": ["niri/workspaces", "clock", "cpu", "memory", "network"],
   "modules-center": [],
   "modules-right": [
-    "custom/begin",
     "pulseaudio",
     "pulseaudio#microphone",
     "backlight",
     "battery",
-    "custom/end",
   ],
   "battery": {
     "bat": "BAT0",
@@ -105,7 +95,7 @@
   "niri/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "1": "〇",
+      "1": "\uf303",
       "2": "一",
       "3": "二",
       "4": "三",
@@ -127,15 +117,5 @@
       "20": "十九",
       "21": "廿",
     },
-  },
-  "custom/begin": {
-    "format": " ",
-    "interval": "once",
-    "tooltip": false,
-  },
-  "custom/end": {
-    "format": " ",
-    "interval": "once",
-    "tooltip": false,
   },
 }
