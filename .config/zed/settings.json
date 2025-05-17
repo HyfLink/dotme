@@ -56,6 +56,9 @@
     },
     "ruff": {
       "binary": { "path": "/usr/bin/ruff" }
+    },
+    "taplo": {
+      "binary": { "path": "/usr/bin/taplo" }
     }
   }
 }

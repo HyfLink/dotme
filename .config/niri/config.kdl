@@ -314,7 +314,6 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "dunst"
-spawn-at-startup "ulauncher"
 spawn-at-startup "fcitx5" "-d" "--replace"
 spawn-at-startup "xwayland-satellite" ":12"
 
@@ -372,6 +371,11 @@ animations {
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
 }
+
+// You can declare named workspaces at the top level of the config:
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
+//
+// workspace "steam"
 
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:

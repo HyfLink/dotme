@@ -30,7 +30,7 @@
       "threequarters": "\uf241",
       "full": "\uf240",
     },
-    "tooltip-format": "{capacity}%",
+    "tooltip-format": "\uf240 {capacity}%",
     "states": {
       "empty": 10,
       "quarter": 30,
@@ -47,6 +47,7 @@
     "interval": 60,
     "format": "\uf017 {:%H:%M}",
     "format-alt": "\uf133 {:%Y-%m-%d %H:%M}",
+    "tooltip-format": "\uf133 {:%Y-%m-%d %H:%M}",
   },
   "cpu": {
     "interval": 2,
@@ -57,11 +58,13 @@
     "interval": 2,
     "format": "\uf538",
     "format-alt": "\uf538 {used}GiB",
+    "tooltip-format": "\uf538 {percentage}% {used}GiB",
   },
   "network": {
     "interval": 2,
     "format": "\uf1eb",
     "format-alt": "\uf019 {bandwidthDownBytes} \uf093 {bandwidthUpBytes}",
+    "tooltip-format": "\uf019 {bandwidthDownBytes} \uf093 {bandwidthUpBytes}",
   },
   "pulseaudio": {
     "format": "{icon}",

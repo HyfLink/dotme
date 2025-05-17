@@ -77,6 +77,9 @@
 !.config/bottom
 !.config/bottom/catppuccin
 !.config/bottom/bottom.toml
+# Fastfetch
+!.config/fastfetch
+!.config/fastfetch/config.jsonc
 # Fcitx5
 !.config/fcitx5
 !.config/fcitx5/conf
