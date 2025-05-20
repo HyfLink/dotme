@@ -45,6 +45,10 @@
 !.config/tmux
 !.config/tmux/plugins
 !.config/tmux/plugins/catppuccin
+!.config/waybar
+!.config/waybar/catppuccin
+!.config/waybar/config.jsonc
+!.config/waybar/style.css
 !.config/wlogout
 !.config/wlogout/catppuccin
 !.config/wlogout/layout

@@ -1,0 +1,62 @@
+@import "catppuccin/themes/latte.css";
+
+* {
+    font-family: "LXGW WenKai", "Font Awesome 6 Free";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+tooltip {
+    background-color: @teal;
+    border-color: @teal;
+    border-radius: 8px;
+}
+
+/* battery, backlight, clock, etc.. */
+#battery,
+#backlight,
+#wireplumber,
+#cpu,
+#memory,
+#network {
+    background-color: inherit;
+    color: @teal;
+    padding: 0px 6px;
+}
+#clock,
+#tray {
+    background-color: @teal;
+    color: @base;
+    padding: 0px 6px;
+}
+
+/* battery */
+#battery.threequarters,
+#battery.half {
+    color: @yellow;
+}
+#battery.quarter,
+#battery.empty {
+    color: @red;
+}
+
+/* niri/workspaces */
+#workspaces {
+}
+#workspaces button {
+    color: @teal;
+    border-radius: 0px;
+    transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+#workspaces button:hover {
+    background-color: @overlay0;
+}
+#workspaces button.focused,
+#workspaces button.focused:hover {
+    background-color: @teal;
+    color: @base;
+}
