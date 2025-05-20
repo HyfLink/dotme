@@ -1,0 +1,53 @@
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: rgba(239, 241, 245, 0.5);
+}
+
+button {
+    border-radius: 0;
+    border-color: #179299;
+    text-decoration-color: #4c4f69;
+    color: #4c4f69;
+    background-color: #e6e9ef;
+    border-style: solid;
+    border-width: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:focus,
+button:active,
+button:hover {
+    /* 20% Overlay 2, 80% mantle */
+    background-color: rgb(209, 211, 220);
+    outline-style: none;
+}
+
+#lock {
+    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/lock.svg");
+}
+
+#logout {
+    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/logout.svg");
+}
+
+#suspend {
+    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/suspend.svg");
+}
+
+#hibernate {
+    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/hibernate.svg");
+}
+
+#shutdown {
+    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/shutdown.svg");
+}
+
+#reboot {
+    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/reboot.svg");
+}
