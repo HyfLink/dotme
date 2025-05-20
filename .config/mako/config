@@ -3,9 +3,9 @@
 # GLOBAL CONFIGURATION OPTIONS
 max-history=5
 sort=+time
-include=~/.config/catppuccin/mako/themes/catppuccin-latte/catppuccin-latte-teal
+include=~/.config/mako/catppuccin/themes/catppuccin-latte/catppuccin-latte-teal
 
 # STYLE OPTIONS
-font=LXGW WenKai 16
-width=360
-height=120
+font=LXGW WenKai 24
+width=480
+height=160

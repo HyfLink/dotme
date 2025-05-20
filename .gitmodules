@@ -2,13 +2,13 @@
 	path = .zim
 	url = https://github.com/zimfw/zimfw
 [submodule ".config/catppuccin/kitty"]
-	path = .config/catppuccin/kitty
+	path = .config/kitty/catppuccin
 	url = https://github.com/catppuccin/kitty
 [submodule ".config/catppuccin/bat"]
-	path = .config/catppuccin/bat
+	path = .config/bat/catppuccin
 	url = https://github.com/catppuccin/bat
 [submodule ".config/catppuccin/yazi"]
-	path = .config/catppuccin/yazi
+	path = .config/yazi/catppuccin
 	url = https://github.com/catppuccin/yazi
 [submodule ".config/catppuccin/fzf"]
 	path = .config/catppuccin/fzf
@@ -17,32 +17,29 @@
 	path = .config/catppuccin/sddm
 	url = https://github.com/catppuccin/sddm
 [submodule ".config/catppuccin/thunderbird"]
-	path = .config/catppuccin/thunderbird
+	path = .thunderbird/catppuccin
 	url = https://github.com/catppuccin/thunderbird
 [submodule ".config/catppuccin/tmux"]
 	path = .config/tmux/plugins/catppuccin
 	url = https://github.com/catppuccin/tmux
 [submodule ".config/catppuccin/bottom"]
-	path = .config/catppuccin/bottom
+	path = .config/bottom/catppuccin
 	url = https://github.com/catppuccin/bottom
 [submodule ".config/catppuccin/swaylock"]
-	path = .config/catppuccin/swaylock
+	path = .config/swaylock/catppuccin
 	url = https://github.com/catppuccin/swaylock
 [submodule ".config/catppuccin/cava"]
-	path = .config/catppuccin/cava
+	path = .config/cava/catppuccin
 	url = https://github.com/catppuccin/cava
 [submodule ".config/catppuccin/conky"]
 	path = .config/catppuccin/conky
 	url = https://github.com/catppuccin/conky
 [submodule ".config/catppuccin/mako"]
-	path = .config/catppuccin/mako
+	path = .config/mako/catppuccin
 	url = https://github.com/catppuccin/mako
 [submodule ".config/catppuccin/wlogout"]
-	path = .config/catppuccin/wlogout
+	path = .config/wlogout/catppuccin
 	url = https://github.com/catppuccin/wlogout
-[submodule ".config/catppuccin/kde"]
-	path = .config/catppuccin/kde
-	url = https://github.com/catppuccin/kde
 [submodule ".config/catppuccin/rofi"]
-	path = .config/catppuccin/rofi
+	path = .config/rofi/catppuccin
 	url = https://github.com/catppuccin/rofi

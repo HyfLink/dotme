@@ -1,4 +1,4 @@
-@theme "~/.config/catppuccin/rofi/themes/catppuccin-latte.rasi"
+@theme "catppuccin/themes/catppuccin-latte.rasi"
 
 configuration {
   font:                "LXGW WenKai 16";

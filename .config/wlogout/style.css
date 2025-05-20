@@ -29,25 +29,25 @@ button:hover {
 }
 
 #lock {
-    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/lock.svg");
+    background-image: url("/home/yifan/.config/wlogout/catppuccin/icons/wlogout/latte/teal/lock.svg");
 }
 
 #logout {
-    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/logout.svg");
+    background-image: url("/home/yifan/.config/wlogout/catppuccin/icons/wlogout/latte/teal/logout.svg");
 }
 
 #suspend {
-    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/suspend.svg");
+    background-image: url("/home/yifan/.config/wlogout/catppuccin/icons/wlogout/latte/teal/suspend.svg");
 }
 
 #hibernate {
-    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/hibernate.svg");
+    background-image: url("/home/yifan/.config/wlogout/catppuccin/icons/wlogout/latte/teal/hibernate.svg");
 }
 
 #shutdown {
-    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/shutdown.svg");
+    background-image: url("/home/yifan/.config/wlogout/catppuccin/icons/wlogout/latte/teal/shutdown.svg");
 }
 
 #reboot {
-    background-image: url("/home/yifan/.config/catppuccin/wlogout/icons/wlogout/latte/teal/reboot.svg");
+    background-image: url("/home/yifan/.config/wlogout/catppuccin/icons/wlogout/latte/teal/reboot.svg");
 }

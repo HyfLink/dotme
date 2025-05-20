@@ -17,6 +17,8 @@ input {
             // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
             layout "us"
         }
+
+        numlock
     }
 
     // Next sections include libinput settings.
@@ -107,7 +109,7 @@ output "eDP-1" {
     // 2560x1600 / 1.454545 = 1760x1600
     // 2560x1600 / 1.5      = 1706x1066
     // 2560x1600 / 1.6      = 1600x1000
-    scale 1.333333
+    scale 1.333333333
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
@@ -157,7 +159,7 @@ layout {
 
     // You can change the default width of the new windows.
     // If you leave the brackets empty, the windows themselves will decide their initial width.
-    default-column-width { proportion 1.0; }
+    default-column-width { proportion 0.5; }
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -438,7 +440,7 @@ window-rule {
 }
 
 // Enable rounded corners for all windows.
-/-window-rule {
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
@@ -476,7 +478,7 @@ binds {
     Mod+L             repeat=false { spawn "swaylock"; }
     Mod+B             repeat=false { spawn "firefox"; }
     Mod+C             repeat=false { spawn "zeditor"; }
-    Mod+E             repeat=false { spawn "dolphin"; }
+    Mod+E             repeat=false { spawn "nautilus"; }
     Mod+Shift+E       repeat=false { spawn "kitty" "-e" "yazi"; }
     Mod+T             repeat=false { spawn "kitty"; }
     Mod+Shift+T       repeat=false { spawn "kitty" "-e" "tmux"; }
