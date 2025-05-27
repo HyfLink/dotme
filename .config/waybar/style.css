@@ -1,62 +1,70 @@
 @import "catppuccin/themes/latte.css";
 
+/* set font style */
 * {
     font-family: "LXGW WenKai", "Font Awesome 6 Free";
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
 }
 
-window#waybar {
-    background-color: rgba(255, 255, 255, 0.6);
+/* set transparent background */
+window {
+    background-color: transparent;
 }
 
+/* set tooltip styles */
 tooltip {
     background-color: @teal;
-    border-color: @teal;
-    border-radius: 8px;
+    color: @base;
+    border: none;
 }
 
-/* battery, backlight, clock, etc.. */
+/* set workspace styles */
+#workspaces {
+    background-color: @teal;
+}
+#workspaces button {
+    color: @base;
+    border: none;
+    border-radius: 0;
+}
+#workspaces button:hover,
+#workspaces button.focused {
+    background-color: @base;
+    color: @teal;
+}
+
+/* set tray styles */
+#tray {
+    background-color: @teal;
+    color: @base;
+}
+
+/* set clock,battery,backlight,... styles */
+#clock,
 #battery,
 #backlight,
 #wireplumber,
 #cpu,
 #memory,
 #network {
-    background-color: inherit;
-    color: @teal;
-    padding: 0px 6px;
-}
-#clock,
-#tray {
     background-color: @teal;
     color: @base;
-    padding: 0px 6px;
+    padding: 0 0.2em;
 }
 
-/* battery */
-#battery.threequarters,
-#battery.half {
-    color: @yellow;
-}
-#battery.quarter,
-#battery.empty {
-    color: @red;
-}
-
-/* niri/workspaces */
-#workspaces {
-}
-#workspaces button {
-    color: @teal;
-    border-radius: 0px;
-    transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-}
-#workspaces button:hover {
-    background-color: @overlay0;
-}
-#workspaces button.focused,
-#workspaces button.focused:hover {
+/* set scope styles */
+#custom-begin {
     background-color: @teal;
     color: @base;
+    padding: 0 0 0 1em;
+    margin: 0 0 0 0.5em;
+    border-radius: 1em 0 0 1em;
+}
+#custom-end {
+    background-color: @teal;
+    color: @base;
+    padding: 0 1em 0 0;
+    margin: 0 0.5em 0 0;
+    border-radius: 0 1em 1em 0;
 }

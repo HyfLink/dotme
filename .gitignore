@@ -31,6 +31,8 @@
 !.config/kitty
 !.config/kitty/catppuccin
 !.config/kitty/kitty.conf
+!.config/Kvantum
+!.config/Kvantum/kvantum.kvconfig
 !.config/mako
 !.config/mako/catppuccin
 !.config/mako/config

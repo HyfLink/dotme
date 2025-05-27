@@ -7,23 +7,33 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# --------------
-# Alias & Export
-# --------------
+# Start user configurations {{{
 alias c="clear"
+alias z="zeditor"
 alias l="eza -l --icons --git"
 alias la="eza -la --icons --git"
 alias lt="eza -l --icons --git --tree"
 alias lta="eza -la --icons --git --tree"
 
 export EDITOR="zeditor --wait"
-
 # https://rsproxy.cn/
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 
+# Yazi shell wrapper that provides the ability to change the current
+# working directory when exiting Yazi.
+# https://yazi-rs.github.io/docs/quick-start#shell-wrapper
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 # https://github.com/catppuccin/fzf
 source $HOME/.config/catppuccin/fzf/themes/catppuccin-fzf-frappe.sh
+# }}} End user configurations
 
 # Start configuration added by Zim install {{{
 #
