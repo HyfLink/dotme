@@ -1,0 +1,94 @@
+# vim: ft=dosini
+[Metadata]
+Name=Catppuccin {{ .catppuccin.flavor }} {{ .catppuccin.accent }}
+Version=1.0
+Author=justTOBBI, Isabelinc, Kurome
+Description=Catppuccin {{ .catppuccin.flavor }} {{ .catppuccin.accent }} color theme
+ScaleWithDPI=True
+
+[InputPanel]
+Font=Sans 13
+Spacing=3
+
+# Unselected candidate color
+NormalColor=#{{ .color.text }}
+# Selected candidate color
+HighlightCandidateColor=#{{ .color.base }}
+# Input character color
+HighlightColor=#{{ .color.accent }}
+# Input character background color
+HighlightBackgroundColor=#{{ .color.surface0 }}
+
+[InputPanel/TextMargin]
+Left=18
+Right=18
+Top=8
+Bottom=8
+
+[InputPanel/Background]
+Color=#{{ .color.surface0 }}
+
+# Uncomment this to switch to rounded-corner
+# Image=panel.svg
+
+[InputPanel/Background/Margin]
+Left=10
+Right=10
+Top=10
+Bottom=10
+
+[InputPanel/Highlight]
+Color=#{{ .color.accent }}
+
+# Uncomment this to switch to rounded-corner
+# Image=highlight.svg
+
+[InputPanel/Highlight/Margin]
+Left=18
+Right=18
+Top=8
+Bottom=8
+
+[Menu]
+Font=Sans 10
+NormalColor=#{{ .color.text }}
+Spacing=3
+
+[Menu/Background]
+Color=#{{ .color.surface0 }}
+
+[Menu/Background/Margin]
+Left=2
+Right=2
+Top=2
+Bottom=2
+
+[Menu/ContentMargin]
+Left=2
+Right=2
+Top=2
+Bottom=2
+
+[Menu/Highlight]
+Color=#{{ .color.pink }}
+
+[Menu/Highlight/Margin]
+Left=10
+Right=10
+Top=5
+Bottom=5
+
+[Menu/Separator]
+Color=#{{ .color.base }}
+
+[Menu/CheckBox]
+Image=radio.png
+
+[Menu/SubMenu]
+Image=arrow.png
+
+[Menu/TextMargin]
+Left=5
+Right=5
+Top=5
+Bottom=5

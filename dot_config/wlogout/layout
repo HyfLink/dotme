@@ -1,0 +1,36 @@
+{
+    "label" : "lock",
+    "action" : "swaylock &",
+    "text" : "(L)ock",
+    "keybind" : "l"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "(H)ibernate",
+    "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "systemctl start --user niri-shutdown.target",
+    "text" : "l(O)gout",
+    "keybind" : "o"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "(S)hutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "s(U)spend",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "(R)eboot",
+    "keybind" : "r"
+}

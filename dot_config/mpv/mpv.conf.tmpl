@@ -1,0 +1,21 @@
+# Main mpv options
+background-color='#{{ .color.base }}'
+osd-back-color='#{{ .color.crust }}'
+osd-border-color='#{{ .color.crust }}'
+osd-color='#{{ .color.text }}'
+osd-shadow-color='#{{ .color.base }}'
+
+# Stats script options
+# Options are on separate lines for clarity
+# Colors are in #BBGGRR format
+# script-opts-append=stats-border_color=bgr({{ .color.mantle }})
+# script-opts-append=stats-font_color=bgr({{ .color.text }})
+# script-opts-append=stats-plot_bg_border_color=bgr({{ .color.accent }})
+# script-opts-append=stats-plot_bg_color=bgr({{ .color.mantle }})
+# script-opts-append=stats-plot_color=bgr({{ .color.accent }})
+
+# External script options
+# It is fine to leave these here even if one does not use these scripts because they are just ignored unless a script uses them
+
+# UOSC options
+script-opts-append=uosc-color=foreground={{ .color.accent }},foreground_text={{ .color.surface0 }},background={{ .color.base }},background_text={{ .color.text }},curtain={{ .color.mantle }},success={{ .color.green }},error={{ .color.red }}

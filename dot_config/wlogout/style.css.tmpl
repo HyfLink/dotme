@@ -1,0 +1,49 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: #{{ .color.base }};
+}
+
+button {
+	border-radius: 0;
+	border-color: #{{ .color.accent }};
+	text-decoration-color: #{{ .color.text }};
+	color: #{{ .color.text }};
+	background-color: #{{ .color.mantle }};
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #{{ .color.mantle }};
+	outline-style: none;
+}
+#lock {
+    background-image: url("{{ .chezmoi.homeDir }}/.config/wlogout/lock.svg");
+}
+
+#logout {
+    background-image: url("{{ .chezmoi.homeDir }}/.config/wlogout/logout.svg");
+}
+
+#suspend {
+    background-image: url("{{ .chezmoi.homeDir }}/.config/wlogout/suspend.svg");
+}
+
+#hibernate {
+    background-image: url("{{ .chezmoi.homeDir }}/.config/wlogout/hibernate.svg");
+}
+
+#shutdown {
+    background-image: url("{{ .chezmoi.homeDir }}/.config/wlogout/shutdown.svg");
+}
+
+#reboot {
+    background-image: url("{{ .chezmoi.homeDir }}/.config/wlogout/reboot.svg");
+}

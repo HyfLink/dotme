@@ -1,0 +1,121 @@
+[manager]
+cwd = { fg = "#{{ .color.teal }}" }
+
+hovered         = { fg = "#{{ .color.base }}", bg = "#{{ .color.accent }}" }
+preview_hovered = { fg = "#{{ .color.base }}", bg = "#{{ .color.text }}" }
+
+find_keyword  = { fg = "#{{ .color.yellow }}", italic = true }
+find_position = { fg = "#{{ .color.pink }}", bg = "reset", italic = true }
+
+marker_copied   = { fg = "#{{ .color.green }}", bg = "#{{ .color.green }}" }
+marker_cut      = { fg = "#{{ .color.red }}", bg = "#{{ .color.red }}" }
+marker_marked   = { fg = "#{{ .color.teal }}", bg = "#{{ .color.teal }}" }
+marker_selected = { fg = "#{{ .color.accent }}", bg = "#{{ .color.accent }}" }
+
+tab_active   = { fg = "#{{ .color.base }}", bg = "#{{ .color.text }}" }
+tab_inactive = { fg = "#{{ .color.text }}", bg = "#{{ .color.surface1 }}" }
+tab_width    = 1
+
+count_copied   = { fg = "#{{ .color.base }}", bg = "#{{ .color.green }}" }
+count_cut      = { fg = "#{{ .color.base }}", bg = "#{{ .color.red }}" }
+count_selected = { fg = "#{{ .color.base }}", bg = "#{{ .color.accent }}" }
+
+border_symbol = "│"
+border_style  = { fg = "#{{ .color.overlay1 }}" }
+
+syntect_theme = "~/.config/bat/themes/catppuccin-{{ .catppuccin.flavor }}.tmTheme"
+
+[mode]
+normal_main = { fg = "#{{ .color.base }}", bg = "#{{ .color.accent }}", bold = true }
+normal_alt  = { fg = "#{{ .color.accent }}", bg = "#{{ .color.surface0 }}"}
+
+select_main = { fg = "#{{ .color.base }}", bg = "#{{ .color.green }}", bold = true }
+select_alt  = { fg = "#{{ .color.green }}", bg = "#{{ .color.surface0 }}"}
+
+unset_main  = { fg = "#{{ .color.base }}", bg = "#{{ .color.flamingo }}", bold = true }
+unset_alt   = { fg = "#{{ .color.flamingo }}", bg = "#{{ .color.surface0 }}"}
+
+[status]
+separator_open  = ""
+separator_close = ""
+
+progress_label  = { fg = "#ffffff", bold = true }
+progress_normal = { fg = "#{{ .color.blue }}", bg = "#{{ .color.surface1 }}" }
+progress_error  = { fg = "#{{ .color.red }}", bg = "#{{ .color.surface1 }}" }
+
+perm_type  = { fg = "#{{ .color.blue }}" }
+perm_read  = { fg = "#{{ .color.yellow }}" }
+perm_write = { fg = "#{{ .color.red }}" }
+perm_exec  = { fg = "#{{ .color.green }}" }
+perm_sep   = { fg = "#{{ .color.overlay1 }}" }
+
+[input]
+border   = { fg = "#{{ .color.accent }}" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[pick]
+border   = { fg = "#{{ .color.accent }}" }
+active   = { fg = "#{{ .color.pink }}" }
+inactive = {}
+
+[confirm]
+border     = { fg = "#{{ .color.accent }}" }
+title      = { fg = "#{{ .color.accent }}" }
+content    = {}
+list       = {}
+btn_yes    = { reversed = true }
+btn_no     = {}
+
+[cmp]
+border = { fg = "#{{ .color.accent }}" }
+
+[tasks]
+border  = { fg = "#{{ .color.accent }}" }
+title   = {}
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "#{{ .color.surface0 }}" }
+cand            = { fg = "#{{ .color.teal }}" }
+rest            = { fg = "#{{ .color.overlay2 }}" }
+desc            = { fg = "#{{ .color.pink }}" }
+separator       = "  "
+separator_style = { fg = "#{{ .color.surface2 }}" }
+
+[help]
+on      = { fg = "#{{ .color.teal }}" }
+run     = { fg = "#{{ .color.pink }}" }
+desc    = { fg = "#{{ .color.overlay2 }}" }
+hovered = { bg = "#{{ .color.surface2 }}", bold = true }
+footer  = { fg = "#{{ .color.text }}", bg = "#{{ .color.surface1 }}" }
+
+[notify]
+title_info  = { fg = "#{{ .color.teal }}" }
+title_warn  = { fg = "#{{ .color.yellow }}" }
+title_error = { fg = "#{{ .color.red }}" }
+
+[filetype]
+rules = [
+	# Media
+	{ mime = "image/*", fg = "#{{ .color.teal }}" },
+	{ mime = "{audio,video}/*", fg = "#{{ .color.yellow }}" },
+
+	# Archives
+	{ mime = "application/*zip", fg = "#{{ .color.pink }}" },
+	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "#{{ .color.pink }}" },
+
+	# Documents
+	{ mime = "application/{pdf,doc,rtf}", fg = "#{{ .color.green }}" },
+
+	# Fallback
+	{ name = "*", fg = "#{{ .color.text }}" },
+	{ name = "*/", fg = "#{{ .color.accent }}" }
+]
+
+[spot]
+border = { fg = "#{{ .color.accent }}" }
+title  = { fg = "#{{ .color.accent }}" }
+tbl_cell = { fg = "#{{ .color.accent }}", reversed = true }
+tbl_col = { bold = true }

@@ -1,0 +1,67 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  // Left
+  // ---------------------------------------------------------------------------
+  "modules-left": ["clock", "cpu", "memory", "network"],
+  "clock": {
+    "interval": 60,
+    "format": "\uf017 {:%H:%M}",
+    "format-alt": "\uf133 {:%m-%d}",
+    "tooltip-format": "{:%c}",
+    "locale": "zh_CN.UTF-8",
+    "on-click-middle": "date | wl-copy",
+    "on-click-right": "thunderbird",
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "\uf2db {usage}%",
+    "tooltip": false,
+    "on-click-right": "missioncenter",
+  },
+  "memory": {
+    "interval": 2,
+    "format": "\uf0a0 {percentage}%",
+    "tooltip": false,
+    "on-click-right": "kitty -e btm",
+  },
+  "network": {
+    "interval": 2,
+    "format": "\uf019 {bandwidthDownBytes}",
+    "format-alt": "\uf093 {bandwidthUpBytes}",
+    "format-disabled": "\uf1eb",
+    "format-disconnected": "\uf1eb",
+    "tooltip": false,
+    "on-click-right": "nm-connection-editor",
+  },
+  // Center
+  // ---------------------------------------------------------------------------
+  "modules-center": ["niri/workspaces"],
+  "niri/workspaces": {
+    "format": "\uf111",
+  },
+  // Right
+  // ---------------------------------------------------------------------------
+  "modules-right": ["tray", "wireplumber", "backlight", "battery"],
+  "tray": {
+    "icon-size": 20,
+    "spacing": 8,
+  },
+  "wireplumber": {
+    "format": "\uf028 {volume}%",
+    "format-muted": "\uf6a9 0%",
+    "tooltip": false,
+    "on-click-middle": "wpctl set-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+  },
+  "backlight": {
+    "format": "\uf185 {percent}%",
+    "tooltip": false,
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
+    "tooltip": false,
+    "on-click-right": "tlpui",
+  },
+}

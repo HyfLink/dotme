@@ -1,0 +1,16 @@
+# 启用雾凇方案，请修改输入法框架用户目录（见下）下的
+# default.custom.yaml 文件。示例：
+patch:
+  # 这里的 rime_ice_suggestion 为雾凇方案的默认预设
+  __include: rime_ice_suggestion:/
+  __patch:
+    menu/page_size: 9
+# 如需自定义配方：修改输入法框架用户目录（见下）下的 <recipe>.custom.yaml
+# 文件，例如，拼音方案的为：rime_ice.custom.yaml。
+
+# 常见输入法框架用户目录位置：
+# * iBus: $HOME/.config/ibus/rime/
+# * Fcitx5: $HOME/.local/share/fcitx5/rime/
+
+# 更多 rime 配置 patch 说明，请参阅：
+# https://github.com/rime/home/wiki/Configuration#補靪

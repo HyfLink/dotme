@@ -1,0 +1,117 @@
+@define-color accent #{{ .color.accent }};
+@define-color rosewater #{{ .color.rosewater }};
+@define-color flamingo #{{ .color.flamingo }};
+@define-color pink #{{ .color.pink }};
+@define-color mauve #{{ .color.mauve }};
+@define-color red #{{ .color.red }};
+@define-color maroon #{{ .color.maroon }};
+@define-color peach #{{ .color.peach }};
+@define-color yellow #{{ .color.yellow }};
+@define-color green #{{ .color.green }};
+@define-color teal #{{ .color.teal }};
+@define-color sky #{{ .color.sky }};
+@define-color sapphire #{{ .color.sapphire }};
+@define-color blue #{{ .color.blue }};
+@define-color lavender #{{ .color.lavender }};
+@define-color text #{{ .color.text }};
+@define-color subtext1 #{{ .color.subtext1 }};
+@define-color subtext0 #{{ .color.subtext0 }};
+@define-color overlay2 #{{ .color.overlay2 }};
+@define-color overlay1 #{{ .color.overlay1 }};
+@define-color overlay0 #{{ .color.overlay0 }};
+@define-color surface2 #{{ .color.surface2 }};
+@define-color surface1 #{{ .color.surface1 }};
+@define-color surface0 #{{ .color.surface0 }};
+@define-color base #{{ .color.base }};
+@define-color mantle #{{ .color.mantle }};
+@define-color crust #{{ .color.crust }};
+
+* {
+    font-family: "Comic Code", "Font Awesome 6 Free";
+    font-size: 1em;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+tooltip {
+    font-family: "LXGW WenKai";
+    background-color: @surface1;
+    color: @text;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+}
+
+/* left in a group */
+#clock,
+#wireplumber {
+    background-color: @surface1;
+    color: @accent;
+    padding: 0 0.5em 0 1em;
+    border-radius: 1em 0 0 1em;
+}
+
+/* right in a group */
+#battery,
+#network {
+    background-color: @surface1;
+    color: @accent;
+    padding: 0 1em 0 0.5em;
+    border-radius: 0 1em 1em 0;
+}
+#network.disabled,
+#network.disconnected,
+#battery.warning:not(.charging) {
+    color: @red;
+}
+#battery.charging {
+    color: @green;
+}
+
+/* left-most */
+#clock {
+    margin-left: 1em;
+}
+
+/* right-most */
+#battery {
+    margin-right: 1em;
+}
+
+/* inside a group */
+#cpu,
+#memory,
+#backlight {
+    background-color: @surface1;
+    color: @accent;
+    padding: 0 0.5em;
+}
+
+/* a single group */
+#tray,
+#workspaces {
+    background-color: @surface1;
+    margin: 0 1em;
+    padding: 0 0.667em;
+    border-radius: 1em;
+}
+#workspaces button {
+    background-color: @surface1;
+    color: @accent;
+    padding: 0 0.333em;
+    border: none;
+    border-radius: 1em;
+}
+#workspaces button.empty {
+    color: @subtext1;
+}
+#workspaces button.active,
+#workspaces button:hover {
+    color: @accent;
+}

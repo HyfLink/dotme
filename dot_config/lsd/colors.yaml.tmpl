@@ -1,0 +1,38 @@
+user: "#{{ .color.mauve }}"
+group: "#{{ .color.lavender }}"
+permission:
+  read: "#{{ .color.green }}"
+  write: "#{{ .color.yellow }}"
+  exec: "#{{ .color.maroon }}"
+  exec-sticky: "#{{ .color.mauve }}"
+  no-access: "#{{ .color.subtext0 }}"
+  octal: "#{{ .color.teal }}"
+  acl: "#{{ .color.teal }}"
+  context: "#{{ .color.sky }}"
+date:
+  hour-old: "#{{ .color.teal }}"
+  day-old: "#{{ .color.sky }}"
+  older: "#{{ .color.sapphire }}"
+size:
+  none: "#{{ .color.subtext0 }}"
+  small: "#{{ .color.green }}"
+  medium: "#{{ .color.yellow }}"
+  large: "#{{ .color.peach }}"
+inode:
+  valid: "#{{ .color.pink }}"
+  invalid: "#{{ .color.subtext0 }}"
+links:
+  valid: "#{{ .color.pink }}"
+  invalid: "#{{ .color.subtext0 }}"
+tree-edge: "#{{ .color.subtext1 }}"
+git-status:
+  default: "#{{ .color.text }}"
+  unmodified: "#{{ .color.subtext0 }}"
+  ignored: "#{{ .color.subtext0 }}"
+  new-in-index: "#{{ .color.green }}"
+  new-in-workdir: "#{{ .color.green }}"
+  typechange: "#{{ .color.yellow }}"
+  deleted: "#{{ .color.red }}"
+  renamed: "#{{ .color.green }}"
+  modified: "#{{ .color.yellow }}"
+  conflicted: "#{{ .color.red }}"
